@@ -1,5 +1,3 @@
 class Game
-  def initialize
-    puts 'Game is initialized'
-  end
+  def initialize; end
 end
