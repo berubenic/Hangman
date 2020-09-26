@@ -21,4 +21,9 @@ class Game
     @secret_word = @secret_word.split('')
     p @secret_word
   end
+
+  def compare_guess_to_secret_word(guess)
+    p @secret_word
+    p @secret_word.include?(guess)
+  end
 end

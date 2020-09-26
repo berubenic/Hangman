@@ -15,9 +15,11 @@ game.choose_secret_word
 game.lowercase_secret_word
 game.secret_word_array
 
-board = Board.new(game.secret_word)
-board.replace_secret_word
+board = Board.new
+board.replace_secret_word_with_underscores(game.secret_word.length)
 board.display_underscores
 
 player = Player.new
 player.guess_letter
+
+game.compare_guess_to_secret_word(player.guess)

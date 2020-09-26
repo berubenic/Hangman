@@ -1,16 +1,15 @@
 # frozen_string_literal:true
 
 class Board
-  def initialize(secret_word)
-    @secret_word = secret_word
-    @word_table = nil
+  def initialize
+    @underscores = []
   end
 
-  def replace_secret_word
-    @word_table = @secret_word.each { |c| c.replace '_' }
+  def replace_secret_word_with_underscores(length)
+    length.times { @underscores.push('_ ') }
   end
 
   def display_underscores
-    p @word_table.join(' ')
+    p @underscores.join
   end
 end
