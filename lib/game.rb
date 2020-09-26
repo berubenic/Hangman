@@ -2,6 +2,8 @@
 
 # Holds the game logic
 class Game
+  attr_reader :secret_word
+
   def initialize(possible_words)
     @secret_word = nil
     @possible_words = possible_words
