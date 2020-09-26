@@ -15,6 +15,10 @@ class Game
 
   def lowercase_secret_word
     @secret_word.downcase!
+  end
+
+  def secret_word_array
+    @secret_word = @secret_word.split('')
     p @secret_word
   end
 end
