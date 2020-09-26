@@ -9,6 +9,10 @@ class Game
 
   def choose_secret_word
     @secret_word = @possible_words.sample
+  end
+
+  def lowercase_secret_word
+    @secret_word.downcase!
     p @secret_word
   end
 end

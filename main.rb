@@ -11,3 +11,4 @@ dictionary.keep_5_to_12_words
 
 new_game = Game.new(dictionary.possible_words)
 new_game.choose_secret_word
+new_game.lowercase_secret_word
