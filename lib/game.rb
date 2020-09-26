@@ -1,3 +1,6 @@
+# frozen_string_literal:true
+
+# Holds the game logic
 class Game
   def initialize(possible_words)
     @secret_word = nil

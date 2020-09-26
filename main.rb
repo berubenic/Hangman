@@ -1,5 +1,8 @@
-require_relative 'lib/game.rb'
-require_relative 'lib/dictionary.rb'
+# frozen_string_literal:true
+
+require_relative 'lib/game'
+require_relative 'lib/dictionary'
+require_relative 'lib/player'
 
 dictionary = Dictionary.new
 dictionary.load_dictionary

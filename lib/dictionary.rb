@@ -1,3 +1,7 @@
+# frozen_string_literal:true
+
+# Opens the file that contains list of words
+
 class Dictionary
   attr_reader :possible_words
 
