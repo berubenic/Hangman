@@ -1,0 +1,21 @@
+class Dictionary
+  def initialize
+    @dictionary = nil
+    @possible_words = []
+    @secret_word = nil
+  end
+
+  def load_dictionary
+    @dictionary = File.open '5desk.txt'
+  end
+
+  def read_dictionary
+    @dictionary = @dictionary.read.split
+  end
+
+  def keep_5_to_12_words
+    @dictionary.each do |word|
+      @possible_words.push(word) if word.length <= 12 && word.length >= 6
+    end
+  end
+end
