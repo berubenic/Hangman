@@ -1,8 +1,9 @@
 class Dictionary
+  attr_reader :possible_words
+
   def initialize
     @dictionary = nil
     @possible_words = []
-    @secret_word = nil
   end
 
   def load_dictionary
