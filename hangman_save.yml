@@ -1,0 +1,26 @@
+---
+guess: save
+secret_word:
+- c
+- r
+- i
+- c
+- k
+- e
+- t
+- e
+- r
+underscores:
+- '_ '
+- '_ '
+- '_ '
+- '_ '
+- '_ '
+- e
+- '_ '
+- e
+- '_ '
+incorrect_guesses: 5
+incorrect_letters:
+- a
+game_over: false
