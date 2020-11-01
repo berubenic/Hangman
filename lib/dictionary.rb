@@ -19,7 +19,7 @@ class Dictionary
 
   def keep_5_to_12_words
     @dictionary.each do |word|
-      @possible_words.push(word) if word.length <= 12 && word.length >= 6
+      @possible_words.push(word) if word.length <= 12 && word.length >= 5
     end
   end
 end
